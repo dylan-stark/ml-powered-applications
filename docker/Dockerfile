@@ -11,3 +11,5 @@ RUN \
 
 RUN python -c "import nltk; nltk.download('punkt')"
 
+CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter notebook --notebook-dir=/ml-powered-applications/notebooks --ip 0.0.0.0 --no-browser --allow-root"]
+
